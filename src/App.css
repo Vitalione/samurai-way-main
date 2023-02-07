@@ -11,23 +11,8 @@ display: grid;
 
 }
 
-.header {
-grid-area: h;
-    background-color: aqua;
-}
-
-.nav {
-    grid-area: n;
-    background-color: lightcoral;
-
-}
 
 
-.content {
-    grid-area: c;
-    background-color: greenyellow;
-}
 
-.header img{
-    width: 40px;
-}
+
+
