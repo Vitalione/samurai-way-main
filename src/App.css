@@ -11,6 +11,13 @@ display: grid;
 
 }
 
+.app-wrapper-content {
+    grid-area: c;
+    background-color: greenyellow;
+
+}
+
+
 
 
 
