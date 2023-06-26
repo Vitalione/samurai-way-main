@@ -2,7 +2,11 @@ import React from 'react';
 import s from "./MyPosts.module.css";
 import MyPost from "./Post/MyPost";
 
-const MyPosts = () => {
+const MyPosts = (props) => {
+
+    let postsElements = props.posts.map(p =>
+        <MyPost message={p.message} likesCount={p.likesCount}/>)
+
     return (
         <div className={s.postsBlock}>
             <h3>My posts</h3>
@@ -15,8 +19,7 @@ const MyPosts = () => {
                 </div>
             </div>
             <div className={s.posts}>
-                <MyPost message={"Hi, how are you"} likesCount={"0"}/>
-                <MyPost message={"It's my first post"} likesCount={"23"}/>
+                {postsElements}
             </div>
         </div>
     );
